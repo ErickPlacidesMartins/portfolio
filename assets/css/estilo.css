@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif ;
+    scroll-behavior: smooth;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 1;
+    font-size: 50%;
+    font-weight: bold;
+}
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+/* Seção de apresentação */
+
+
+#animade{
+    font-size: 30px;
+    display: inline-block;
+    border-right: 2px solid black;
+    padding-right: 3px;
+    max-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: pisca normal infinite .8s, escrever normal 5s steps(55) both;
+    color: white;
+}
+
+#presentation{
+    background-image: url(/assets/img/capa.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+
+#presentation nav , ul, li{
+    color: white;
+    font-size: 18px;
+    display: inline;
+    
+}
+
+#presentation a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;  
+}
+
+#presentation .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 200px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+
+}
+#presentation .cta:hover{
+    color: white;
+    font-weight: 500;
+    background-color: rgb(85, 97, 209);
+}
+
+
+
+/* Seção de Portifólio */
+
+#portfolio .portfolio{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#portfolio .portfolio-header h1{
+    margin-bottom: 50px;
+
+}
+#portfolio .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#portfolio .project-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#portfolio .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+    color: white;
+    border: 3px solid black;
+}
+
+#portfolio .project-info a {
+    text-decoration: none;
+    color: gold;
+}
+
+#portfolio .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#portfolio .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+#portfolio .project-img {
+    flex-basis: 50%;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid black;
+}
+
+#portfolio .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 70%;
+    width: 70%;
+    opacity: 0;
+}
+#portfolio .project-img img{
+    transition: 0.5s ease transform;
+}
+#portfolio .project-item:hover .project-img img{
+    transform: scale(1.1);
+}
+
+/* Keyframes */
+
+@keyframes pisca {
+    100%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes escrever {
+    100%{
+        MAX-WIDTH:100%
+    }
+}
+
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) {
+    #portfolio .project-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #portfolio .all-projects .project-info{
+        height: 100%
+    }
+    #portfolio .all-projects .project-img{
+        height: 100%
+    }
+    #portfolio .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+
+}
