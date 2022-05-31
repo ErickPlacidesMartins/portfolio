@@ -70,7 +70,7 @@ footer {
 }
 
 #presentation{
-    background-image: url(/assets/img/capa.jpg);
+    background-image: url(../img/capa.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
