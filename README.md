@@ -7,7 +7,7 @@ Repositório desenvolvido para apresentação de meu 1º portfólio no desafio c
 Abaixo a foto do desenvolvimento finalizado e site de acesso;
 
 
-https://erickplacidesmartins.github.io/Desafio_portfolio_Startse/
+https://erickplacidesmartins.github.io/portfolio/
 
 
 
