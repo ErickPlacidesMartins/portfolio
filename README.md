@@ -4,11 +4,9 @@ Repositório desenvolvido para apresentação de meu 1º portfólio no desafio c
 - desafio proposto: refatoração do  codigo de portfolio da liveconding Startse;
 
 
-Abaixo a foto do desenvolvimento finalizado e site de acesso;
+Abaixo a foto do desenvolvimento finalizado e site 
 
-
-https://erickplacidesmartins.github.io/portfolio/
-
+Site em finalização 
 
 <div align="center">
             <img src="https://user-images.githubusercontent.com/103293578/170891178-14d6221f-0ea4-49e9-a1f2-c2b06db287f1.png" width="auto">
