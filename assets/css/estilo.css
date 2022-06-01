@@ -67,13 +67,14 @@ footer {
 
 
 #animade {
-    font-size: 30px;   
-    border-right: 2px solid transparent;
+    font-size: 30px;
+    display: inline-block;
+    border-right: 2px solid black;
     padding-right: 3px;
     max-width: 0;
     white-space: nowrap;
     overflow: hidden;
-    animation: pisca normal infinite .99s, escrever normal 4s steps(60) both;
+    animation: pisca normal infinite .8s, escrever normal 5s steps(55) both;
     color: white;
 }
 
