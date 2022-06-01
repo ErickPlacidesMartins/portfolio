@@ -61,6 +61,10 @@ footer {
     background-color: rgb(7, 7, 105);
 }
 
+#header a {
+    text-decoration: none;   
+}
+
 
 #animade {
     font-size: 30px;
@@ -78,9 +82,12 @@ footer {
     background-image: url(../img/capa.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
-    z-index: 1;
-    
+    position: relative;   
+}
+
+#presentation h1 {
+    font-size: 4rem;
+
 }
 
 #presentation  img {
