@@ -27,19 +27,19 @@ p {
 }
 
 footer {
-    position: absolute;
-    bottom: 1;
+
     font-size: 50%;
-    font-weight: bold;
+    text-align: center;
+    text-decoration: bold;
 }
+
+
 
 
 .container{
     min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;  
 }
 
 
@@ -55,6 +55,11 @@ footer {
 }
 
 /* Seção de apresentação */
+
+#header {
+    font-size: 30px;
+    background-color: rgb(7, 7, 105);
+}
 
 
 #animade{
@@ -75,6 +80,12 @@ footer {
     background-position: center;
     position: relative;
     z-index: 1;
+    
+}
+
+#presentation  img {
+    width: 250px;
+    
     
 }
 
@@ -109,7 +120,7 @@ footer {
 #presentation .cta:hover{
     color: white;
     font-weight: 500;
-    background-color: rgb(85, 97, 209);
+    background-color: rgb(7, 7, 105);
 }
 
 
